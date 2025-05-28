@@ -4,10 +4,42 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    
+    <!-- Add in <head> -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <title>Portfolio - John Smith</title>
   </head>
   <body>
+    <!-- Toggle Switch -->
+        <button
+          id="darkToggle"
+          class="fixed bottom-5 right-5 z-50 px-4 py-2 bg-gray-200 text-xs text-black rounded hover:bg-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700"
+        >
+          Mode
+        </button>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const toggle = document.getElementById('darkToggle');
+      toggle.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+        // Optional: persist choice
+        localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      });
+
+      // Optional: load saved preference
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true, // animate only once
+      });
+    </script>
   </body>
 </html>

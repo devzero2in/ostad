@@ -2,18 +2,18 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id="about" className="w-full bg-[#F2F2F2] py-[120px] px-[20px] md:px-[255px]">
+    <section id="about" data-aos="fade-up" className="w-full bg-[#F2F2F2] dark:bg-gray-900 dark:text-white py-[120px] px-[20px] md:px-[255px]">
         {/* Title */}
         <div className="flex items-center justify-center mb-[50px]">
-            <div className="w-full border-t border-black"></div>
+            <div className="w-full border-t border-black dark:border-white"></div>
             <h2 className="mx-4 text-2xl font-medium text-center whitespace-nowrap">About Me</h2>
-            <div className="w-full border-t border-black"></div>
+            <div className="w-full border-t border-black dark:border-white"></div>
         </div>
 
         {/* Content */}
         <div className="flex flex-col md:flex-row gap-10">
             {/* Text Block */}
-            <div className="flex-1 text-sm leading-relaxed text-gray-700 space-y-4">
+            <div className="flex-1 text-sm leading-relaxed text-gray-700 dark:text-gray-200 space-y-4">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet vestibulum felis. 
                 Vivamus facilisis ligula id fringilla gravida. Suspendisse ultricies sollicitudin lacus, 

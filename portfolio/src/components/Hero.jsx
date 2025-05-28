@@ -6,11 +6,12 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="w-full h-[934px] bg-white pt-[150px] pb-[150px] px-[255px] flex flex-col items-center justify-center gap-[100px] relative top-[90px] text-center"
+      data-aos="fade-down"
+      className="w-full h-[934px] bg-white dark:bg-gray-900 dark:text-white pt-[150px] pb-[150px] px-[255px] flex flex-col items-center justify-center gap-[100px] relative top-[90px] text-center"
     >
       {/* Text Content */}
       <div>
-        <h1 className="text-5xl font-light text-black mb-4">
+        <h1 className="text-5xl font-light text-black dark:text-white mb-4">
           Hi, I’m <span className="font-normal">John Smith</span>
         </h1>
         <p className="text-gray-600 text-base">I design and build things.</p>
@@ -20,7 +21,7 @@ const Hero = () => {
       <div>
         <a href="#about">
           {/* <ChevronDoubleDownIcon className="animate-bounce text-black" /> */}
-            <ChevronsDown size={24} className="animate-bounce text-black" />
+            <ChevronsDown size={24} className="animate-bounce text-black dark:text-white" />
         </a>
       </div>
     </section>

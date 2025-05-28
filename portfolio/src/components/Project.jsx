@@ -3,11 +3,11 @@ import React from 'react'
 
 const Project = () => {
   return (
-    <section id="project" className="w-[1440px] h-[1424px] pt-[120px] pr-[255px] pb-[120px] pl-[255px] bg-[#F2F2F2] flex flex-col gap-[100px] mx-auto">
+    <section id="project" data-aos="fade-up" className="w-[1440px] h-[1424px] pt-[120px] pr-[255px] pb-[120px] pl-[255px] bg-[#F2F2F2] dark:bg-gray-900 dark:text-white flex flex-col gap-[100px] mx-auto">
       {/* Featured Project Title */}
       <div className="relative w-full flex items-center justify-center">
-        <hr className="absolute left-0 right-0 border-t border-black" />
-        <h2 className="bg-[#F2F2F2] px-4 text-[24px] font-medium z-10">Featured Project</h2>
+        <hr className="absolute left-0 right-0 border-t border-black dark:border-white" />
+        <h2 className="bg-[#F2F2F2] dark:bg-gray-900 dark:text-white px-4 text-[24px] font-medium z-10">Featured Project</h2>
       </div>
 
       {/* Featured Projects */}
@@ -59,8 +59,8 @@ const Project = () => {
 
       {/* Other Project Title */}
       <div className="relative w-full flex items-center justify-center">
-        <hr className="absolute left-0 right-0 border-t border-black" />
-        <h2 className="bg-[#F2F2F2] px-4 text-[24px] font-medium z-10">Other Project</h2>
+        <hr className="absolute left-0 right-0 border-t border-black dark:border-white" />
+        <h2 className="bg-[#F2F2F2] dark:bg-gray-900 dark:text-white px-4 text-[24px] font-medium z-10">Other Project</h2>
       </div>
 
       {/* Other Projects Grid */}

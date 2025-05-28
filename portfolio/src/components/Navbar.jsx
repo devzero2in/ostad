@@ -2,10 +2,10 @@ import { Menu } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 w-full h-[90px] bg-white text-black z-50 px-6 md:px-[160px] py-[25px] flex items-center justify-between shadow-sm">
+    <header className="fixed dark:bg-gray-900 dark:text-white top-0 w-full h-[90px] bg-white text-black z-50 px-6 md:px-[160px] py-[25px] flex items-center justify-between shadow-sm">
       <a
         href="#"
-        className="border border-black w-[40px] h-[40px] flex items-center justify-center text-lg font-medium"
+        className="border border-black dark:border-white w-[40px] h-[40px] flex items-center justify-center text-lg font-medium"
       >
         J
       </a>
@@ -60,25 +60,25 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div className="absolute top-[90px] left-0 w-full bg-white shadow-md px-6 py-4 flex-col gap-4 text-sm font-light hidden peer-checked:flex md:hidden">
-            <a href="#about" className="hover:bg-gray-100 px-2 py-1 rounded">
-            about
-            </a>
-            <a href="#experience" className="hover:bg-gray-100 px-2 py-1 rounded">
-            experience
-            </a>
-            <a href="#project" className="hover:bg-gray-100 px-2 py-1 rounded">
-            project
-            </a>
-            <a href="#contact" className="hover:bg-gray-100 px-2 py-1 rounded">
-            contact
-            </a>
-            <hr className="my-2" />
-            <button className="border border-gray-300 px-3 py-1 rounded hover:border-black transition">
-            Resume
-            </button>
-            <button className="border border-gray-300 px-3 py-1 rounded hover:border-black transition">
-            Hire Me
-            </button>
+        <a href="#about" className="hover:bg-gray-100 px-2 py-1 rounded">
+          about
+        </a>
+        <a href="#experience" className="hover:bg-gray-100 px-2 py-1 rounded">
+          experience
+        </a>
+        <a href="#project" className="hover:bg-gray-100 px-2 py-1 rounded">
+          project
+        </a>
+        <a href="#contact" className="hover:bg-gray-100 px-2 py-1 rounded">
+          contact
+        </a>
+        <hr className="my-2" />
+        <button className="border border-gray-300 px-3 py-1 rounded hover:border-black transition">
+          Resume
+        </button>
+        <button className="border border-gray-300 px-3 py-1 rounded hover:border-black transition">
+          Hire Me
+        </button>
       </div>
     </header>
   );
